@@ -1,0 +1,4 @@
+"0",""
+"0","library(wordcloud)"
+"0",""
+"0","wordcloud(func_vizinhos$Vizinho, func_vizinhos$n, random.order=T, rot.per=0.3, scale=c(2,.01), max.words=40, colors = brewer.pal(8, ""Dark2""))"

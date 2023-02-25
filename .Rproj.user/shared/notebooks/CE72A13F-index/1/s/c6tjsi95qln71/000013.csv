@@ -1,0 +1,108 @@
+"0","mapa <- leaflet() %>%
+  #Base groups
+  setView(lng = -58, lat = -14,
+          zoom = 4) %>%
+  #addProviderTiles(providers$Esri.WorldImagery, group = ""Imagem ESRI"") %>%
+  addProviderTiles(providers$Stamen.TonerLite, group = ""Stamen Toner Lite"") %>%
+  #addProviderTiles(providers$OpenStreetMap.Mapnik, group = ""Open Street Map"") %>%
+
+  #Overlay groups
+  # addPolygons(data = areas_importantes,
+  #             color = ""#96390e"",
+  #             weight = 1,
+  #             group = ""Área importante para aves"") %>%
+#   addPolygons(data = riqueza,
+#               color = ""#3c39db"",
+#               weight = 1,
+#               group = ""Riqueza de aves"") %>%
+# addPolygons(data = concentracao,
+#             color = ""#006400"",
+#             weight = 1,
+#             group = ""Área de concentração de aves"") %>%
+#             # popup = paste(""Área: "", N_concentracao$Nome, ""<br>"",
+#             #               ""UF: "", N_concentracao$estado, ""<br>"",
+#             #               ""Descrição: "", N_concentracao$Descricao, ""<br>"",
+#             #               ""Fonte(s): "", N_concentracao$Fontes, ""<br>"")) %>%
+  # addPolygons(data = localidades,
+  #                  color = ""#FF0000"",
+  #                  weight = 1,
+  #                  group = ""Localidades"") %>%
+# addPolygons(data = ucf_integral,
+#             color = ""#fc7303"",
+#             weight = 1,
+#             group = ""UC federal de uso sustentável"",
+#             popup = paste(""Nome: "", ucf_integral$nome, ""<br>"",
+#                           ""Ano de criação: "", ucf_integral$anoCriacao, ""<br>"",
+#                           ""Área (ha): "", ucf_integral$areaHa, ""<br>"",
+#                           ""UF: "", ucf_integral$UF, ""<br>"",
+#                           ""Municípios: "", ucf_integral$municipios, ""<br>"",
+#                           ""Bioma: "", ucf_integral$biomaIBGE, ""<br>"",
+#                           ""CNUC: "", ucf_integral$codigoCnuc, ""<br>"")) %>%
+# addPolygons(data = ucf_sustentavel,
+#             color = ""#158c35"",
+#             weight = 1,
+#             group = ""UC federal de proteção integral"",
+#             popup = paste(""Nome: "", ucf_sustentavel$nome, ""<br>"",
+#                           ""Ano de criação: "", ucf_sustentavel$anoCriacao, ""<br>"",
+#                           ""Área (ha): "", ucf_sustentavel$areaHa, ""<br>"",
+#                           ""UF: "", ucf_sustentavel$UF, ""<br>"",
+#                           ""Municípios: "", ucf_sustentavel$municipios, ""<br>"",
+#                           ""Bioma: "", ucf_sustentavel$biomaIBGE, ""<br>"",
+#                           ""CNUC: "", ucf_sustentavel$codigoCnuc, ""<br>"")) %>%
+  # addPolygons(data = TI_homologadas,
+  #             color = ""#fc7303"",
+  #             weight = 1,
+  #             group = ""Terra indígena homologada"",
+  #             popup = paste(""Terra Indígena: "",  TI_homologadas$terrai_nom)) %>%
+  # addPolygons(data = iba,
+  #             color = ""#73193F"",
+  #             weight = 1,
+  #             group = ""IBA (Important Bird Area"") %>%
+  addCircleMarkers(data = localidades,
+                 color = ""#8B4513"",
+                 radius = 3,
+                 weight = 1,
+                 group = ""Localidades"") %>%
+                 
+                 # popup = paste(""Nome: "", aerogeradores$NOME_EOL, ""<br>"",
+                 #           ""Empresa: "", aerogeradores$PROPRIETAR, ""<br>"",
+                 #            ""Em operação: "", aerogeradores$OPERACAO, ""<br>"",
+                 #            ""Altura total (m): "", aerogeradores$ALT_TOTAL, ""<br>"",
+                 #            ""UF: "", aerogeradores$UF, ""<br>"")) %>%
+    # addPolygons(data = grade_aerogeradores,
+    #            color = ""#F4A460"",
+    #            weight = 1,
+    #            group = ""Grade Aerogeradores"")  %>%
+
+  # Layers Control
+  addLayersControl(
+    #baseGroups = c(#""Open Street Map "",
+                   #""Stamen Toner Lite (default)""
+                   #""Imagem ESRI""),
+    #),
+    overlayGroups = c(#""Área importante para aves"",
+                      # ""Riqueza de aves"",
+                      # ""Área de concentração de aves"",
+                      ""Localidades"",
+                      # ""Grade Aerogeradores"",
+                      # ""Aerogeradores""
+                      #""UC federal de uso sustentável"",
+                      #""UC federal de proteção integral""
+                      #""Terra indígena homologada"",
+                      #""IBA (Important Bird Area)"",
+                      #""Empreendimento eólico""
+                      ),
+        options = layersControlOptions(collapsed = TRUE, autoZIndex = TRUE)) %>%
+  addEasyButton(easyButton(
+    icon=""fa-globe"", title=""Zoom to Level 4"",
+    onClick=JS(""function(btn, map){ map.setZoom(4); }""))) %>% 
+  addMeasure(
+    position = ""bottomleft"",
+    primaryLengthUnit = ""meters"",
+    primaryAreaUnit = ""sqmeters"",
+    activeColor = ""#3D535D"",
+    completedColor = ""#7D4479"")
+"
+"2","Error in addMeasure(., position = ""bottomleft"", primaryLengthUnit = ""meters"",  : 
+  could not find function ""addMeasure""
+"

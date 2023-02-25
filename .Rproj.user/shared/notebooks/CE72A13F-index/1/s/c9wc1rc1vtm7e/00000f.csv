@@ -1,0 +1,22 @@
+"0",""
+"0","lista_camponesesa <-read_csv2(""data/Perdidosa.csv"")"
+"2","[36mℹ[39m Using [34m[34m""','""[34m[39m as decimal and [34m[34m""'.'""[34m[39m as grouping mark. Use `read_delim()` for more control.
+"
+"2","[1mRows: [22m[34m19[39m [1mColumns: [22m[34m10[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m─────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "";""
+[31mchr[39m (9): Nome, Esposa, Esposo, Pai, Mãe, Filhos, Irmãos, Localidade, Região
+[32mdbl[39m (1): Idade"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","View(lista_camponesesa)"
+"0",""
+"0","Tabela_camponesesa <- datatable(lista_camponesesa,"
+"0","                           caption = 'Tabela 1. Caracterização dos camponeses afetados pelos eventos relacionados à Batalha dos Perdidos.',"
+"0",""
+"0","                           colnames = c('Nome', 'Idade', 'Esposa', 'Esposo', 'Pai', 'Mãe', 'Filhos', 'Irmãos', 'Localidade', 'Região'),"
+"2","Error: unexpected symbol in:
+""
+                           colnames = c('Nome', 'Idade', 'Esposa', 'Esposo', 'Pai', 'M�e', 'Filhos""
+"
