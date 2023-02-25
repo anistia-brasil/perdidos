@@ -3,7 +3,7 @@
     "path": "C:/Projetos/painel_perd/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "734788914",
+    "hash": "3279036411",
     "contents": "",
     "dirty": false,
     "created": 1673536144254.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "662,26",
-        "scrollLine": "645",
+        "cursorPosition": "143,58",
+        "scrollLine": "136",
         "last_setup_crc32": "3BA4047982113356"
     },
     "folds": "",
-    "lastKnownWriteTime": 1677345043,
+    "lastKnownWriteTime": 1677352842,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1677345043446,
+    "last_content_update": 1677352842758,
     "read_only": false,
     "read_only_alternatives": []
 }

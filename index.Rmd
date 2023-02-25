@@ -141,7 +141,7 @@ Nesse painel apresentamos uma caracterização geral do evento, de parte dos env
 
 ```{r imagem 1,  echo=FALSE, fig.cap=" ", out.width = '70%', fig.align='center'}
 
-knitr::include_graphics("fig/imagem-perdidos2.jpg")
+knitr::include_graphics("fig/imagem-perdidos1-semfundo.png")
 
 ```
 
@@ -184,16 +184,16 @@ Column {data-width=400}
 
 ```{r imagem 1-A,  echo=FALSE, fig.cap=" ", out.width = '80%', fig.align='center'}
 
-knitr::include_graphics("fig/floresta.jpg")
+knitr::include_graphics("fig/floresta3.jpg")
 
 ```
 
 
-### **Região do Igarapé Perdidos** 
+### **O camponês** 
 
 ```{r imagem 2, echo=FALSE, fig.cap=" ", out.width = '60%', fig.align='center'}
 
-knitr::include_graphics("fig/imagem-perdidos1.jpg")
+knitr::include_graphics("fig/campones7.jpg")
 
 ```
 
@@ -204,23 +204,29 @@ Column {data-width=200}
 
 ```{r}
 
-valueBox(260)
+valueBox(260, color = "#982323")
 ```
 
 ### Homens
 
 ```{r}
 
-valueBox(135, color = "#F4A952")
+valueBox(135, color = "#006400")
 ```
 
 ### Mulheres
 
 ```{r}
 
-valueBox(125, color = "#F4A952")
+valueBox(125, color = "#006400")
 ```
 
+### Pessoas presas
+
+```{r}
+
+valueBox(75, color = "#982323")
+```
 
 ### Pessoas direta e indiretamente afetadas
 
@@ -228,21 +234,21 @@ valueBox(125, color = "#F4A952")
 ```{r}
 
 
-valueBox(1200, icon = "fas fa-map", color = "#F4A952")
+valueBox(1200, color = "#982323")
 ```
 
 ### Localidades envolvidas
 
 ```{r}
 
-valueBox(15, icon = "fa fa-binoculars", color = "#F4A952")
+valueBox(10, color = "#E7DE9D")
 ```
 
 ### Município envolvido, em 
 
 ```{r}
 
-valueBox(1, icon = "fa-object-group")
+valueBox(1, color = "#E7DE9D")
 ```
 
 
@@ -250,7 +256,7 @@ valueBox(1, icon = "fa-object-group")
 
 ```{r}
 
-valueBox(1, icon = "fa-map")
+valueBox(1, color = "#E7DE9D")
 ```
 
 
