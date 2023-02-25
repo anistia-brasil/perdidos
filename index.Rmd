@@ -137,7 +137,7 @@ O evento ocorreu em oito localidades distribuídas no atual município de Piçar
 Nesse painel apresentamos uma caracterização geral do evento, de parte dos envolvidos e dos impactos sofridos pelos camponeses a partir de relatos de alguns dos envolvidos.
 
 
-### **Floresta na região dos Perdidos** 
+### **A região dos Perdidos** 
 
 ```{r imagem 1,  echo=FALSE, fig.cap=" ", out.width = '70%', fig.align='center'}
 
